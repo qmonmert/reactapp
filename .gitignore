@@ -125,3 +125,4 @@ Desktop.ini
 .eslintcache
 # Maven Wrapper
 !.mvn/wrapper/maven-wrapper.jar
+/target/
