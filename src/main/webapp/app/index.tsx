@@ -1,4 +1,5 @@
 import React from 'react';
+import { NextUIProvider } from '@nextui-org/react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from '@/common/primary/app/App';
@@ -7,6 +8,8 @@ const container = document.getElementById('root');
 const root = createRoot(container!);
 root.render(
   <React.StrictMode>
-    <App />
+    <NextUIProvider>
+      <App />
+    </NextUIProvider>
   </React.StrictMode>,
 );
