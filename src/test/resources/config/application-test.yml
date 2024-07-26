@@ -1,0 +1,9 @@
+logging:
+  config: classpath:logback.xml
+  level:
+    tech:
+      jhipster:
+        reactapp: 'OFF'
+spring:
+  main:
+    banner-mode: 'off'

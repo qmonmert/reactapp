@@ -1,0 +1,11 @@
+logging:
+  level:
+    tech:
+      jhipster:
+        reactapp: INFO
+spring:
+  application:
+    name: Reactapp
+  threads:
+    virtual:
+      enabled: true
