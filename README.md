@@ -54,5 +54,6 @@ docker compose -f src/main/docker/sonar.yml up -d
 - [CORS configuration](documentation/cors-configuration.md)
 - [sonar](documentation/sonar.md)
 - [JWT basic auth](documentation/jwt-basic-auth.md)
+- [Cucumber](documentation/cucumber.md)
 
 <!-- jhipster-needle-documentation -->
