@@ -39,6 +39,12 @@
       <version>${approvaltests.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>net.jqwik</groupId>
+      <artifactId>jqwik</artifactId>
+      <version>${jqwik.version}</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <properties>
@@ -56,6 +62,7 @@
     <failsafe-plugin.version>3.3.1</failsafe-plugin.version>
     <maven-checkstyle-plugin.version>3.4.0</maven-checkstyle-plugin.version>
     <approvaltests.version>24.3.0</approvaltests.version>
+    <jqwik.version>1.9.0</jqwik.version>
   </properties>
 
   <build>

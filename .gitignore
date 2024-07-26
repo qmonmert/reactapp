@@ -126,3 +126,5 @@ Desktop.ini
 # Maven Wrapper
 !.mvn/wrapper/maven-wrapper.jar
 /target/
+# JQwik
+.jqwik-database
