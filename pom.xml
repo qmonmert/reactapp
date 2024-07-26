@@ -33,6 +33,12 @@
       <version>${mockito.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.approvaltests</groupId>
+      <artifactId>approvaltests</artifactId>
+      <version>${approvaltests.version}</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <properties>
@@ -49,6 +55,7 @@
     <surefire-plugin.version>3.3.1</surefire-plugin.version>
     <failsafe-plugin.version>3.3.1</failsafe-plugin.version>
     <maven-checkstyle-plugin.version>3.4.0</maven-checkstyle-plugin.version>
+    <approvaltests.version>24.3.0</approvaltests.version>
   </properties>
 
   <build>
