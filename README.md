@@ -23,6 +23,10 @@ npm install
 
 ## Start up
 
+```bash
+./mvnw 
+```
+
 
 <!-- jhipster-needle-startupCommand -->
 
