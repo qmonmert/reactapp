@@ -45,6 +45,17 @@
       <version>${jqwik.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.google.protobuf</groupId>
+      <artifactId>protobuf-java</artifactId>
+      <version>${protobuf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.protobuf</groupId>
+      <artifactId>protobuf-java-util</artifactId>
+      <version>${protobuf.version}</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <properties>
@@ -63,6 +74,8 @@
     <maven-checkstyle-plugin.version>3.4.0</maven-checkstyle-plugin.version>
     <approvaltests.version>24.3.0</approvaltests.version>
     <jqwik.version>1.9.0</jqwik.version>
+    <protobuf.version>4.27.2</protobuf.version>
+    <protobuf-maven-plugin.version>2.4.0</protobuf-maven-plugin.version>
   </properties>
 
   <build>
@@ -119,6 +132,25 @@
                 <version>${java.version}</version>
               </requireJavaVersion>
             </rules>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>io.github.ascopes</groupId>
+          <artifactId>protobuf-maven-plugin</artifactId>
+          <version>${protobuf-maven-plugin.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>generate</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <protocVersion>${protobuf.version}</protocVersion>
+            <sourceDirectories>
+              <sourceDirectory>src/main/proto</sourceDirectory>
+            </sourceDirectories>
+            <failOnMissingSources>false</failOnMissingSources>
           </configuration>
         </plugin>
       </plugins>
@@ -190,6 +222,10 @@
           <consoleOutput>true</consoleOutput>
           <failsOnError>true</failsOnError>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>io.github.ascopes</groupId>
+        <artifactId>protobuf-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
